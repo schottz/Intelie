@@ -1,0 +1,7 @@
+//On Server A
+
+# ssh -p 22 -C username@serverB //forwarding ssh request to Server B
+
+//On Server B
+
+# ssh -L 22:wsIpHere:8000 username@serverB //receiving request on port 22 and forwarding to web service port (8000)
